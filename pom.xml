@@ -11,10 +11,16 @@
 	<groupId>com.kajalkukreja</groupId>
 	<artifactId>covid-vaccine-slot-backend</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
+	<packaging>war</packaging>
 	<name>covid-vaccine-slot-backend</name>
 	<description>Backend webservice for covid-vaccine-slot project</description>
+	
 	<properties>
-		<java.version>11</java.version>
+		<java.version>1.8</java.version>
+		<start-class>com.kajalkukreja.api.CovidVaccineSlotBackendApplication</start-class>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+		<project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
+		<!-- <maven.jar.plugin>3.3.9</maven.jar.plugin> -->
 	</properties>
 	<dependencies>
 		<dependency>
@@ -36,6 +42,12 @@
 		<dependency>
 			<groupId>org.springframework.data</groupId>
 			<artifactId>spring-data-jpa</artifactId>
+		</dependency>
+		
+		<dependency>
+			<groupId>org.springframework.boot</groupId>
+			<artifactId>spring-boot-starter-tomcat</artifactId>
+			<scope>provided</scope>
 		</dependency>
 		
 		<dependency>
